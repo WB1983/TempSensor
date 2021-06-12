@@ -1,0 +1,514 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"85 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/adc.c
+[e E2476 . `uc
+channel_AN2 2
+channel_AN9 9
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"49 C:\Users\WANG\MPLABXProjects\TempSensor.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"67 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"79 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"127
+[v _EUSART_is_tx_done EUSART_is_tx_done `(a  1 e 1 0 ]
+"142
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"162
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"170
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"194
+[v _EUSART_RxDataHandler EUSART_RxDataHandler `(v  1 e 1 0 ]
+"217
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"222
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"231
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"236
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"240
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"244
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"248
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+"252
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+"52 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"71
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"67 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"111
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"128
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"132
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"73 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_CRC/ModbusCRC.c
+[v _crc16 crc16 `(us  1 e 2 0 ]
+"17 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_uart/Modbus.c
+[v _MOS_vModbusInit MOS_vModbusInit `(v  1 e 1 0 ]
+"23
+[v _MOS_vModbusReceiveEnalbe MOS_vModbusReceiveEnalbe `(v  1 e 1 0 ]
+"28
+[v _MOS_vModbusTransmitEnalbe MOS_vModbusTransmitEnalbe `(v  1 e 1 0 ]
+"33
+[v _MOS_vModbudFun3 MOS_vModbudFun3 `(v  1 e 1 0 ]
+"70
+[v _MOS_vModbudFun6 MOS_vModbudFun6 `(v  1 e 1 0 ]
+"111
+[v _MOS_vModBusHandler MOS_vModBusHandler `(v  1 e 1 0 ]
+"25 C:\Users\WANG\MPLABXProjects\TempSensor.X/Modbus_uart/Modbus.h
+[s S239 _TModbusData 204 `[100]uc 1 auReceiveBuff 100 0 `uc 1 u8OneFrameFinish 1 100 `uc 1 u8ReceivedByteCount 1 101 `uc 1 u8TimeoutStart 1 102 `[100]uc 1 auTransmitBuff 100 103 `uc 1 u8TimeoutCount 1 203 ]
+"156 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_uart/Modbus.c
+[v _Mos_PtGetModbusObject Mos_PtGetModbusObject `(*.39S239  1 e 1 0 ]
+[s S412 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
+[s S421 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S426 . 1 `S412 1 . 1 0 `S421 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES426  1 e 1 @11 ]
+[s S460 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"570
+[u S469 . 1 `S460 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES469  1 e 1 @17 ]
+"732
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"1152
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1214
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+[s S116 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1293
+[u S125 . 1 `S116 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES125  1 e 1 @145 ]
+"1455
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+[s S30 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1478
+[s S39 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S44 . 1 `S30 1 . 1 0 `S39 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES44  1 e 1 @149 ]
+"1589
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1648
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1706
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1847
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1867
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1887
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S351 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"1912
+[s S359 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S363 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S366 . 1 `S351 1 . 1 0 `S359 1 . 1 0 `S363 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES366  1 e 1 @157 ]
+"1967
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2039
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2096
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+[s S634 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2113
+[u S643 . 1 `S634 1 . 1 0 ]
+[v _LATBbits LATBbits `VES643  1 e 1 @269 ]
+"2430
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2779
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2841
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2861
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2913
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3172
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3192
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3228
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3278
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3311
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S214 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3328
+[u S223 . 1 `S214 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES223  1 e 1 @413 ]
+"3373
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S192 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3390
+[u S201 . 1 `S192 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES201  1 e 1 @414 ]
+"3435
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3487
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3516
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+[s S103 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"63 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/eusart.c
+[u S108 . 1 `S103 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES108  1 e 1 0 ]
+"68
+[v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"69
+[v _EUSART_RxDefaultInterruptHandler EUSART_RxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"71
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"72
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"73
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"61 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
+"62
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"9 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_CRC/ModbusCRC.c
+[v _auchCRCHi auchCRCHi `DC[256]uc  1 e 256 0 ]
+"38
+[v _auchCRCLo auchCRCLo `DC[256]uc  1 e 256 0 ]
+"10 C:\Users\WANG\MPLABXProjects\TempSensor.X/Modbus_uart/Modbus.h
+[v _Reg Reg `[11]us  1 e 22 0 ]
+"8 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_uart/Modbus.c
+[v _MOS_tModbusData MOS_tModbusData `S239  1 e 204 @8340 ]
+[s S632 _TModbusPara 1 `uc 1 u8DeviceAddress 1 0 ]
+"9
+[v _MOS_tModbusPara MOS_tModbusPara `S632  1 e 1 0 ]
+"49 C:\Users\WANG\MPLABXProjects\TempSensor.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"78
+} 0
+"50 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"71
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"75
+} 0
+"67 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"128
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"130
+} 0
+"55 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"61 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"69
+} 0
+"79 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"114
+} 0
+"248
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetTxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"250
+} 0
+"252
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"254
+} 0
+"240
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"242
+} 0
+"236
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"238
+} 0
+"244
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"246
+} 0
+"67 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"17 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_uart/Modbus.c
+[v _MOS_vModbusInit MOS_vModbusInit `(v  1 e 1 0 ]
+{
+"21
+} 0
+"111
+[v _MOS_vModBusHandler MOS_vModBusHandler `(v  1 e 1 0 ]
+{
+"114
+[v MOS_vModBusHandler@u16ReceivedCRC u16ReceivedCRC `us  1 a 2 47 ]
+"113
+[v MOS_vModBusHandler@u16CalculateCRC u16CalculateCRC `us  1 a 2 44 ]
+"116
+[v MOS_vModBusHandler@u16ReceivedAddress u16ReceivedAddress `uc  1 a 1 49 ]
+"117
+[v MOS_vModBusHandler@u16ReceivedFunctionCode u16ReceivedFunctionCode `uc  1 a 1 46 ]
+"154
+} 0
+"70
+[v _MOS_vModbudFun6 MOS_vModbudFun6 `(v  1 e 1 0 ]
+{
+"74
+[v MOS_vModbudFun6@i i `us  1 a 2 28 ]
+"73
+[v MOS_vModbudFun6@u16value u16value `us  1 a 2 26 ]
+"72
+[v MOS_vModbudFun6@u16RegisterAdd u16RegisterAdd `us  1 a 2 24 ]
+"76
+[v MOS_vModbudFun6@j j `us  1 a 2 22 ]
+"75
+[v MOS_vModbudFun6@u16TransmitCRC u16TransmitCRC `us  1 a 2 20 ]
+"109
+} 0
+"33
+[v _MOS_vModbudFun3 MOS_vModbudFun3 `(v  1 e 1 0 ]
+{
+"38
+[v MOS_vModbudFun3@i i `us  1 a 2 35 ]
+"39
+[v MOS_vModbudFun3@j j `us  1 a 2 33 ]
+"40
+[v MOS_vModbudFun3@u16TransmitCRC u16TransmitCRC `us  1 a 2 31 ]
+"36
+[v MOS_vModbudFun3@u16RegisterLen u16RegisterLen `us  1 a 2 29 ]
+"35
+[v MOS_vModbudFun3@u16RegisterAdd u16RegisterAdd `us  1 a 2 27 ]
+"37
+[v MOS_vModbudFun3@u16TransDataLen u16TransDataLen `us  1 a 2 25 ]
+"68
+} 0
+"73 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_CRC/ModbusCRC.c
+[v _crc16 crc16 `(us  1 e 2 0 ]
+{
+"77
+[v crc16@uIndex uIndex `ul  1 a 4 9 ]
+"76
+[v crc16@uchCRCLo uchCRCLo `uc  1 a 1 14 ]
+"75
+[v crc16@uchCRCHi uchCRCHi `uc  1 a 1 13 ]
+"73
+[v crc16@puchMsg puchMsg `*.39uc  1 p 2 0 ]
+[v crc16@usDataLen usDataLen `us  1 p 2 2 ]
+"87
+} 0
+"28 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_uart/Modbus.c
+[v _MOS_vModbusTransmitEnalbe MOS_vModbusTransmitEnalbe `(v  1 e 1 0 ]
+{
+"31
+} 0
+"23
+[v _MOS_vModbusReceiveEnalbe MOS_vModbusReceiveEnalbe `(v  1 e 1 0 ]
+{
+"26
+} 0
+"142 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/eusart.c
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+"151
+[v EUSART_Write@txData txData `uc  1 a 1 0 ]
+"159
+} 0
+"127
+[v _EUSART_is_tx_done EUSART_is_tx_done `(a  1 e 1 0 ]
+{
+"130
+} 0
+"52 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"78
+} 0
+"111 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"125
+} 0
+"132
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+[s S239 _TModbusData 204 `[100]uc 1 auReceiveBuff 100 0 `uc 1 u8OneFrameFinish 1 100 `uc 1 u8ReceivedByteCount 1 101 `uc 1 u8TimeoutStart 1 102 `[100]uc 1 auTransmitBuff 100 103 `uc 1 u8TimeoutCount 1 203 ]
+"137
+[v TMR0_DefaultInterruptHandler@tModbusData tModbusData `*.39S239  1 a 2 4 ]
+"135
+[v TMR0_DefaultInterruptHandler@u16Count u16Count `us  1 s 2 u16Count ]
+"152
+} 0
+"162 C:\Users\WANG\MPLABXProjects\TempSensor.X\mcc_generated_files/eusart.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"168
+} 0
+"170
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"192
+} 0
+"222
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+"229
+} 0
+"217
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+"220
+} 0
+"231
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"234
+} 0
+"194
+[v _EUSART_RxDataHandler EUSART_RxDataHandler `(v  1 e 1 0 ]
+{
+[s S239 _TModbusData 204 `[100]uc 1 auReceiveBuff 100 0 `uc 1 u8OneFrameFinish 1 100 `uc 1 u8ReceivedByteCount 1 101 `uc 1 u8TimeoutStart 1 102 `[100]uc 1 auTransmitBuff 100 103 `uc 1 u8TimeoutCount 1 203 ]
+"196
+[v EUSART_RxDataHandler@tModbusData tModbusData `*.39S239  1 a 2 7 ]
+"199
+[v EUSART_RxDataHandler@ucReceivedByte ucReceivedByte `uc  1 a 1 6 ]
+"215
+} 0
+"25 C:\Users\WANG\MPLABXProjects\TempSensor.X/Modbus_uart/Modbus.h
+[s S239 _TModbusData 204 `[100]uc 1 auReceiveBuff 100 0 `uc 1 u8OneFrameFinish 1 100 `uc 1 u8ReceivedByteCount 1 101 `uc 1 u8TimeoutStart 1 102 `[100]uc 1 auTransmitBuff 100 103 `uc 1 u8TimeoutCount 1 203 ]
+"156 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_uart/Modbus.c
+[v _Mos_PtGetModbusObject Mos_PtGetModbusObject `(*.39S239  1 e 1 0 ]
+{
+"159
+} 0
