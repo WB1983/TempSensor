@@ -81,11 +81,11 @@ channel_FVR 31
 [v _MOS_vModbudFun3 MOS_vModbudFun3 `(v  1 e 1 0 ]
 "70
 [v _MOS_vModbudFun6 MOS_vModbudFun6 `(v  1 e 1 0 ]
-"111
+"104
 [v _MOS_vModBusHandler MOS_vModBusHandler `(v  1 e 1 0 ]
 "25 C:\Users\WANG\MPLABXProjects\TempSensor.X/Modbus_uart/Modbus.h
 [s S239 _TModbusData 204 `[100]uc 1 auReceiveBuff 100 0 `uc 1 u8OneFrameFinish 1 100 `uc 1 u8ReceivedByteCount 1 101 `uc 1 u8TimeoutStart 1 102 `[100]uc 1 auTransmitBuff 100 103 `uc 1 u8TimeoutCount 1 203 ]
-"156 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_uart/Modbus.c
+"149 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_uart/Modbus.c
 [v _Mos_PtGetModbusObject Mos_PtGetModbusObject `(*.39S239  1 e 1 0 ]
 [s S412 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
@@ -367,18 +367,18 @@ channel_FVR 31
 {
 "21
 } 0
-"111
+"104
 [v _MOS_vModBusHandler MOS_vModBusHandler `(v  1 e 1 0 ]
 {
-"114
+"107
 [v MOS_vModBusHandler@u16ReceivedCRC u16ReceivedCRC `us  1 a 2 47 ]
-"113
+"106
 [v MOS_vModBusHandler@u16CalculateCRC u16CalculateCRC `us  1 a 2 44 ]
-"116
+"109
 [v MOS_vModBusHandler@u16ReceivedAddress u16ReceivedAddress `uc  1 a 1 49 ]
-"117
+"110
 [v MOS_vModBusHandler@u16ReceivedFunctionCode u16ReceivedFunctionCode `uc  1 a 1 46 ]
-"154
+"147
 } 0
 "70
 [v _MOS_vModbudFun6 MOS_vModbudFun6 `(v  1 e 1 0 ]
@@ -393,7 +393,7 @@ channel_FVR 31
 [v MOS_vModbudFun6@j j `us  1 a 2 22 ]
 "75
 [v MOS_vModbudFun6@u16TransmitCRC u16TransmitCRC `us  1 a 2 20 ]
-"109
+"102
 } 0
 "33
 [v _MOS_vModbudFun3 MOS_vModbudFun3 `(v  1 e 1 0 ]
@@ -507,8 +507,8 @@ channel_FVR 31
 } 0
 "25 C:\Users\WANG\MPLABXProjects\TempSensor.X/Modbus_uart/Modbus.h
 [s S239 _TModbusData 204 `[100]uc 1 auReceiveBuff 100 0 `uc 1 u8OneFrameFinish 1 100 `uc 1 u8ReceivedByteCount 1 101 `uc 1 u8TimeoutStart 1 102 `[100]uc 1 auTransmitBuff 100 103 `uc 1 u8TimeoutCount 1 203 ]
-"156 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_uart/Modbus.c
+"149 C:\Users\WANG\MPLABXProjects\TempSensor.X\Modbus_uart/Modbus.c
 [v _Mos_PtGetModbusObject Mos_PtGetModbusObject `(*.39S239  1 e 1 0 ]
 {
-"159
+"152
 } 0

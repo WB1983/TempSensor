@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Sat Jun 12 22:29:02 2021
+                                                                                               Sat Jun 12 23:14:17 2021
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	16F1827
@@ -3552,7 +3552,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3530  047C                     __ptext15:	
   3531 ;; *************** function _MOS_vModBusHandler *****************
   3532 ;; Defined at:
-  3533 ;;		line 111 in file "Modbus_uart/Modbus.c"
+  3533 ;;		line 104 in file "Modbus_uart/Modbus.c"
   3534 ;; Parameters:    Size  Location     Type
   3535 ;;		None
   3536 ;; Auto vars:     Size  Location     Type
@@ -3593,9 +3593,9 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3571                           ; Regs used in _MOS_vModBusHandler: [wreg-fsr1h+status,2+status,0+pclath+cstack]
   3572                           
   3573                           
-  3574                           ;Modbus_uart/Modbus.c: 113:  uint16_t u16CalculateCRC;;Modbus_uart/Modbus.c: 114:  uint1
-      +                          6_t u16ReceivedCRC;;Modbus_uart/Modbus.c: 116:  uint8_t u16ReceivedAddress;;Modbus_uart/
-      +                          Modbus.c: 117:  uint8_t u16ReceivedFunctionCode;;Modbus_uart/Modbus.c: 118:  if(0 == MOS
+  3574                           ;Modbus_uart/Modbus.c: 106:  uint16_t u16CalculateCRC;;Modbus_uart/Modbus.c: 107:  uint1
+      +                          6_t u16ReceivedCRC;;Modbus_uart/Modbus.c: 109:  uint8_t u16ReceivedAddress;;Modbus_uart/
+      +                          Modbus.c: 110:  uint8_t u16ReceivedFunctionCode;;Modbus_uart/Modbus.c: 111:  if(0 == MOS
       +                          _tModbusData.u8OneFrameFinish)
   3575  047C  30F8               	movlw	248
   3576  047D  0086               	movwf	6
@@ -3611,7 +3611,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3586  0485  2D2B               	goto	l365
   3587  0486                     l1674:
   3588                           
-  3589                           ;Modbus_uart/Modbus.c: 123:  u16ReceivedAddress = MOS_tModbusData.auReceiveBuff[0];
+  3589                           ;Modbus_uart/Modbus.c: 116:  u16ReceivedAddress = MOS_tModbusData.auReceiveBuff[0];
   3590  0486  3094               	movlw	148
   3591  0487  0086               	movwf	6
   3592  0488  3020               	movlw	32
@@ -3622,7 +3622,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3597  048D  0845               	movf	??_MOS_vModBusHandler,w
   3598  048E  00D1               	movwf	MOS_vModBusHandler@u16ReceivedAddress
   3599                           
-  3600                           ;Modbus_uart/Modbus.c: 124:  u16ReceivedFunctionCode = MOS_tModbusData.auReceiveBuff[1];
+  3600                           ;Modbus_uart/Modbus.c: 117:  u16ReceivedFunctionCode = MOS_tModbusData.auReceiveBuff[1];
   3601  048F  3094               	movlw	148
   3602  0490  0086               	movwf	6
   3603  0491  3020               	movlw	32
@@ -3634,7 +3634,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3609  0497  00CE               	movwf	MOS_vModBusHandler@u16ReceivedFunctionCode
   3610  0498                     l1676:
   3611                           
-  3612                           ;Modbus_uart/Modbus.c: 126:  u16CalculateCRC= crc16(&MOS_tModbusData.auReceiveBuff[0], M
+  3612                           ;Modbus_uart/Modbus.c: 119:  u16CalculateCRC= crc16(&MOS_tModbusData.auReceiveBuff[0], M
       +                          OS_tModbusData.u8ReceivedByteCount-2);
   3613  0498  3094               	movlw	148
   3614  0499  00A0               	movwf	crc16@puchMsg
@@ -3659,7 +3659,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3633  04AE  00CC               	movwf	MOS_vModBusHandler@u16CalculateCRC
   3634  04AF                     l1678:
   3635                           
-  3636                           ;Modbus_uart/Modbus.c: 128:    u16ReceivedCRC= (MOS_tModbusData.auReceiveBuff[MOS_tModbu
+  3636                           ;Modbus_uart/Modbus.c: 121:    u16ReceivedCRC= (MOS_tModbusData.auReceiveBuff[MOS_tModbu
       +                          sData.u8ReceivedByteCount-2]*256);
   3637  04AF  30F9               	movlw	249
   3638  04B0  0086               	movwf	6
@@ -3690,7 +3690,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3663  04C9  00D0               	movwf	MOS_vModBusHandler@u16ReceivedCRC+1
   3664  04CA                     l1680:
   3665                           
-  3666                           ;Modbus_uart/Modbus.c: 129:  u16ReceivedCRC = u16ReceivedCRC + MOS_tModbusData.auReceive
+  3666                           ;Modbus_uart/Modbus.c: 122:  u16ReceivedCRC = u16ReceivedCRC + MOS_tModbusData.auReceive
       +                          Buff[MOS_tModbusData.u8ReceivedByteCount -1];
   3667  04CA  30F9               	movlw	249
   3668  04CB  0086               	movwf	6
@@ -3722,7 +3722,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3694  04E5  00D0               	movwf	MOS_vModBusHandler@u16ReceivedCRC+1
   3695  04E6                     l1682:
   3696                           
-  3697                           ;Modbus_uart/Modbus.c: 130:    if(u16CalculateCRC == u16ReceivedCRC)
+  3697                           ;Modbus_uart/Modbus.c: 123:    if(u16CalculateCRC == u16ReceivedCRC)
   3698  04E6  0850               	movf	MOS_vModBusHandler@u16ReceivedCRC+1,w
   3699  04E7  064D               	xorwf	MOS_vModBusHandler@u16CalculateCRC+1,w
   3700  04E8  1D03               	skipz
@@ -3738,7 +3738,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3710  04F0                     u450:
   3711  04F0                     l1684:
   3712                           
-  3713                           ;Modbus_uart/Modbus.c: 131:  {;Modbus_uart/Modbus.c: 132:    if(u16ReceivedAddress == MO
+  3713                           ;Modbus_uart/Modbus.c: 124:  {;Modbus_uart/Modbus.c: 125:    if(u16ReceivedAddress == MO
       +                          S_tModbusPara.u8DeviceAddress)
   3714  04F0  0860               	movf	_MOS_tModbusPara,w
   3715  04F1  0651               	xorwf	MOS_vModBusHandler@u16ReceivedAddress,w
@@ -3814,14 +3814,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3784  0521                     l378:
   3785  0521                     l1698:
   3786                           
-  3787                           ;Modbus_uart/Modbus.c: 152:  MOS_tModbusData.u8ReceivedByteCount = 0;
+  3787                           ;Modbus_uart/Modbus.c: 145:  MOS_tModbusData.u8ReceivedByteCount = 0;
   3788  0521  30F9               	movlw	249
   3789  0522  0086               	movwf	6
   3790  0523  3020               	movlw	32
   3791  0524  0087               	movwf	7
   3792  0525  0181               	clrf	1
   3793                           
-  3794                           ;Modbus_uart/Modbus.c: 153:     MOS_tModbusData.u8OneFrameFinish = 0;
+  3794                           ;Modbus_uart/Modbus.c: 146:     MOS_tModbusData.u8OneFrameFinish = 0;
   3795  0526  30F8               	movlw	248
   3796  0527  0086               	movwf	6
   3797  0528  3020               	movlw	32
@@ -4202,7 +4202,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   4164  0278                     u390:
   4165  0278                     l1632:
   4166                           
-  4167                           ;Modbus_uart/Modbus.c: 108:  MOS_vModbusReceiveEnalbe();
+  4167                           ;Modbus_uart/Modbus.c: 101:  MOS_vModbusReceiveEnalbe();
   4168  0278  3187  277E  3181   	fcall	_MOS_vModbusReceiveEnalbe
   4169  027B                     l361:
   4170  027B  0008               	return
@@ -4924,13 +4924,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   4874  06DB                     l1410:
   4875                           
   4876                           ;mcc_generated_files/eusart.c: 142: void EUSART_Write(uint8_t txData);mcc_generated_file
-      +                          s/eusart.c: 143: {;mcc_generated_files/eusart.c: 151:         TXREG = txData;
+      +                          s/eusart.c: 143: {;mcc_generated_files/eusart.c: 151:     TXREG = txData;
   4877  06DB  0820               	movf	EUSART_Write@txData,w
   4878  06DC  0023               	movlb	3	; select bank3
   4879  06DD  009A               	movwf	26	;volatile
   4880  06DE                     l1412:
   4881                           
-  4882                           ;mcc_generated_files/eusart.c: 152:         PIE1bits.TXIE = 1;
+  4882                           ;mcc_generated_files/eusart.c: 152:     PIE1bits.TXIE = 1;
   4883  06DE  0021               	movlb	1	; select bank1
   4884  06DF  1611               	bsf	17,4	;volatile
   4885  06E0                     l136:	
@@ -5830,7 +5830,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5763  0766                     __ptext32:	
   5764 ;; *************** function _Mos_PtGetModbusObject *****************
   5765 ;; Defined at:
-  5766 ;;		line 156 in file "Modbus_uart/Modbus.c"
+  5766 ;;		line 149 in file "Modbus_uart/Modbus.c"
   5767 ;; Parameters:    Size  Location     Type
   5768 ;;		None
   5769 ;; Auto vars:     Size  Location     Type
@@ -5866,7 +5866,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5799                           ; Regs used in _Mos_PtGetModbusObject: []
   5800                           
   5801                           
-  5802                           ;Modbus_uart/Modbus.c: 158:  return &MOS_tModbusData;
+  5802                           ;Modbus_uart/Modbus.c: 151:  return &MOS_tModbusData;
   5803  0766  3020               	movlw	32
   5804  0767  00F1               	movwf	?_Mos_PtGetModbusObject+1
   5805  0768  3094               	movlw	148
@@ -6332,7 +6332,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Sat Jun 12 22:29:02 2021
+Symbol Table                                                                                   Sat Jun 12 23:14:17 2021
 
                 ?_EUSART_SetRxInterruptHandler 0020                       __size_of_MOS_vModbusInit 000B  
                                            l25 06AC                                             l51 0700  

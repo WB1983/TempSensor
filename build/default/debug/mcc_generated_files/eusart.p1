@@ -781,10 +781,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/eusart.c: 143: {
 [f ]
 "151
-[; ;mcc_generated_files/eusart.c: 151:         TXREG = txData;
+[; ;mcc_generated_files/eusart.c: 151:     TXREG = txData;
 [e = _TXREG _txData ]
 "152
-[; ;mcc_generated_files/eusart.c: 152:         PIE1bits.TXIE = 1;
+[; ;mcc_generated_files/eusart.c: 152:     PIE1bits.TXIE = 1;
 [e = . . _PIE1bits 0 4 -> -> 1 `i `uc ]
 "154
 [; ;mcc_generated_files/eusart.c: 154:     while((1 == PIE1bits.TXIE)||(EUSART_is_tx_done() == 0))

@@ -4513,8 +4513,8 @@ void EUSART_Write(uint8_t txData)
 
 
 
-        TXREG = txData;
-        PIE1bits.TXIE = 1;
+    TXREG = txData;
+    PIE1bits.TXIE = 1;
 
     while((1 == PIE1bits.TXIE)||(EUSART_is_tx_done() == 0))
     {

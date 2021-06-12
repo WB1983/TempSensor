@@ -4537,7 +4537,7 @@ void MOS_vModbudFun6()
  {
   EUSART_Write(MOS_tModbusData.auTransmitBuff[j]);
  }
-# 108 "Modbus_uart/Modbus.c"
+
  MOS_vModbusReceiveEnalbe();
 }
 

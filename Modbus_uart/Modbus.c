@@ -98,13 +98,6 @@ void MOS_vModbudFun6()  //6号功能码处理
 	 EUSART_Write(MOS_tModbusData.auTransmitBuff[j]);
 	}
 	
-	// _nop();
-	// _nop();
-	// _nop();
-	// _nop();
-	// _nop();
-	// _nop();
-	
 	MOS_vModbusReceiveEnalbe();  
 }
 

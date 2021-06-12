@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
   -h+dist/default/debug\TempSensor.X.debug.sym \
   --cmf=dist/default/debug\TempSensor.X.debug.cmf -z -Q16F1827 \
-  -oC:\Users\WANG\AppData\Local\Temp\xcAsd60.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\WANG\AppData\Local\Temp\xcAsi7g.4 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/debug/TempSensor.X.debug.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=02066h-02093h -pstack=STACK -ACODE=00h-07FFhx2 \
   -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 -ACONST=00h-0FFhx16 \
@@ -29,7 +29,7 @@ Linker command line:
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE \
   -pcinit=CODE -pfunctab=ENTRY -k \
-  C:\Users\WANG\AppData\Local\Temp\xcAsd60.o \
+  C:\Users\WANG\AppData\Local\Temp\xcAsi7g.o \
   dist/default/debug\TempSensor.X.debug.o 
 
 Object code version is 3.11
@@ -39,7 +39,7 @@ Machine type is 16F1827
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\WANG\AppData\Local\Temp\xcAsd60.o
+C:\Users\WANG\AppData\Local\Temp\xcAsi7g.o
                 end_init                             38       38        2        8       0
                 reset_vec                             0        0        3        0       0
                 config                             8007     8007        2        0       4

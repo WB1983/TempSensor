@@ -4538,14 +4538,7 @@ void MOS_vModbudFun6()
   EUSART_Write(MOS_tModbusData.auTransmitBuff[j]);
  }
 
-    __nop();
-        __nop();
-            __nop();
-                __nop();
-                    __nop();
-                        __nop();
-
-
+ MOS_vModbusReceiveEnalbe();
 }
 
 void MOS_vModBusHandler(void)
